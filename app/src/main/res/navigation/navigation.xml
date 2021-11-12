@@ -9,5 +9,57 @@
         android:id="@+id/clientChatFragment"
         android:name="com.example.clientapp.ui.fragments.ClientChatFragment"
         android:label="fragment_client_chat"
-        tools:layout="@layout/fragment_client_chat" />
+        tools:layout="@layout/fragment_client_chat" >
+        <action
+            android:id="@+id/action_clientChatFragment_to_clientHomeFragment"
+            app:destination="@id/clientHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientHomeFragment"
+        android:name="com.example.clientapp.ui.fragments.ClientHomeFragment"
+        android:label="fragment_client_home"
+        tools:layout="@layout/fragment_client_home" >
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientServicesFragment"
+            app:destination="@id/clientServicesFragment" />
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientSearchFragment"
+            app:destination="@id/clientSearchFragment" />
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientChatFragment"
+            app:destination="@id/clientChatFragment" />
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientProfileFragment"
+            app:destination="@id/clientProfileFragment" />
+        <action
+            android:id="@+id/action_clientHomeFragment_to_clientChatFragment2"
+            app:destination="@id/clientChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientProfileFragment"
+        android:name="com.example.clientapp.ui.fragments.ClientProfileFragment"
+        android:label="fragment_client_profile"
+        tools:layout="@layout/fragment_client_profile" >
+        <action
+            android:id="@+id/action_clientProfileFragment_to_clientHomeFragment"
+            app:destination="@id/clientHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientSearchFragment"
+        android:name="com.example.clientapp.ui.fragments.ClientSearchFragment"
+        android:label="fragment_client_search"
+        tools:layout="@layout/fragment_client_search" >
+        <action
+            android:id="@+id/action_clientSearchFragment_to_clientHomeFragment"
+            app:destination="@id/clientHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientServicesFragment"
+        android:name="com.example.clientapp.ui.fragments.ClientServicesFragment"
+        android:label="fragment_client_services"
+        tools:layout="@layout/fragment_client_services" >
+        <action
+            android:id="@+id/action_clientServicesFragment_to_clientHomeFragment"
+            app:destination="@id/clientHomeFragment" />
+    </fragment>
 </navigation>
