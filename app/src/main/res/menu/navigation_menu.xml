@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_list_cats_fragment"
-        android:title="Список котов "
+
+    <item android:id="@+id/clientHomeFragment"
+        android:title="Home"
         android:icon="@drawable/ico_bottom1"/>
-<!--    <item android:id="@+id/place_holder"-->
-<!--        android:title=""/>-->
-    <item android:id="@+id/nav_favorite_cat_fragment"
-        android:title="Избранное"
+
+    <item android:id="@+id/clientServicesFragment"
+        android:title="Services"
         android:icon="@drawable/ico_bottom2"/>
-    <item android:id="@+id/nav_favorite_cat_fragment"
-        android:title="Избранное"
+    <item android:id="@+id/clientSearchFragment"
+        android:title="Search"
         android:icon="@drawable/ico_bottom3"/>
-    <item android:id="@+id/nav_favorite_cat_fragment"
+    <item android:id="@+id/clientChatFragment"
         android:title="Избранное"
         android:icon="@drawable/ico_bottom4"/>
-    <item android:id="@+id/nav_favorite_cat_fragment"
-        android:title="Избранное"
+    <item android:id="@+id/clientProfileFragment"
+        android:title="Profile"
         android:icon="@drawable/ico_bottom5"/>
 </menu>
