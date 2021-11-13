@@ -12,7 +12,7 @@
         android:title="Search"
         android:icon="@drawable/ico_bottom3"/>
     <item android:id="@+id/clientChatFragment"
-        android:title="Избранное"
+        android:title="Chat"
         android:icon="@drawable/ico_bottom4"/>
     <item android:id="@+id/clientProfileFragment"
         android:title="Profile"

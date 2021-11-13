@@ -16,6 +16,7 @@
         android:theme="@style/Theme.ClientApp">
         <activity
             android:name=".ui.activity.MainActivity"
+            android:theme="@style/Theme.ClientApp.MainTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
