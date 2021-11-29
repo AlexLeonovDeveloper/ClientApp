@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.clientapp.R
 import com.example.clientapp.databinding.FragmentClientHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ClientHomeFragment : Fragment() {
 
     private lateinit var binding: FragmentClientHomeBinding

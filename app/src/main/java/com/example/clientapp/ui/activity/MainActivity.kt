@@ -10,9 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.clientapp.R
 import com.example.clientapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.HiltAndroidApp
-import kotlinx.android.synthetic.main.activity_main.*
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         ).build()
 
         binding.apply {
-            nav_bottom.setupWithNavController(navController)
+            navBottom.setupWithNavController(navController)
         }
     }
 }

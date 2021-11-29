@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.clientapp.databinding.FragmentClientVizitkaBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ClientVizitkaFragment : Fragment() {
 
     private lateinit var binding: FragmentClientVizitkaBinding

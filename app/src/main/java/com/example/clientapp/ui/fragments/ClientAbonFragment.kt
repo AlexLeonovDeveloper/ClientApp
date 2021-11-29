@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.clientapp.databinding.FragmentClientAbonBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ClientAbonFragment : Fragment() {
 
     private lateinit var binding: FragmentClientAbonBinding

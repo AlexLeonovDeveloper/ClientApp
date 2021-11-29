@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.clientapp.databinding.FragmentClientSettingsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ClientSettingsFragment : Fragment() {
 
     private lateinit var binding: FragmentClientSettingsBinding

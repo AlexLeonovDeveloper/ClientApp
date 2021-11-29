@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.clientapp.databinding.FragmentClientOtzuvuBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ClientOtzuvuFragment : Fragment() {
 
     private lateinit var binding: FragmentClientOtzuvuBinding
