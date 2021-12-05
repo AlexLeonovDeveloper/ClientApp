@@ -48,7 +48,7 @@ class ClientHomeFragment : Fragment() {
         listTop.addAll(listOf(top1, top2, top3, top4))
 
         binding.rvTopMain.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvTopMain.adapter = TopMainAdapter(requireContext(), listTop)
 
         val listCenter = arrayListOf<CenterMain>()
@@ -60,7 +60,7 @@ class ClientHomeFragment : Fragment() {
         listCenter.addAll(listOf(center1, center2, center3, center4))
 
         binding.rvCenterMain.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvCenterMain.adapter = TopCenterAdapter(requireContext(), listCenter)
 
         val listBottom = arrayListOf<BottomMain>()
@@ -73,7 +73,7 @@ class ClientHomeFragment : Fragment() {
         listBottom.addAll(listOf(bottommain1, bottommain2, bottommain3, bottommain4))
 
         binding.rvBottomMain.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvBottomMain.adapter = BottomMainAdapter(requireContext(), listBottom)
     }
 }
