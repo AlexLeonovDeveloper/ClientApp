@@ -15,7 +15,6 @@
             android:id="@+id/iv_animal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/iv_main_center_1"
             android:scaleType="centerCrop">
 
         </ImageView>

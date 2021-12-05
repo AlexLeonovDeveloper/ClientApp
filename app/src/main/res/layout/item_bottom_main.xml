@@ -2,24 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="321dp"
-    android:layout_height="181dp"
+    android:layout_height="230dp"
     android:layout_margin="5dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/iv_animal"
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Марафон к лету Комплекс"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvImage"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Крепкий орешек"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/iv_main_bottom_1"
-            android:scaleType="centerCrop">
+            android:layout_height="182dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp">
 
-        </ImageView>
+            <ImageView
+                android:id="@+id/iv_animal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
 
-    </androidx.cardview.widget.CardView>
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
 
 </LinearLayout>

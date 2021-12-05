@@ -9,50 +9,73 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        <LinearLayout
-            android:id="@+id/top"
+        <RelativeLayout
+            android:id="@+id/Top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
-            android:orientation="vertical"
-            android:paddingStart="15dp"
-            android:paddingLeft="15dp">
+            android:layout_alignParentTop="true"
+            android:background="@color/main_bg">
+
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Привет, Екатерина"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/iv_notif" />
+
+            <LinearLayout
+                android:id="@+id/top"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Привет, Екатерина"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvTopMain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp" />
 
-        </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
-            android:layout_below="@id/top"
-            android:orientation="vertical"
-            android:paddingStart="15dp"
-            android:paddingLeft="15dp">
+            android:layout_below="@id/Top"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:text="Записаться"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvCenterMain"
@@ -77,19 +100,19 @@
             android:id="@+id/bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
             android:layout_below="@id/ad_frame"
-            android:orientation="vertical"
-            android:paddingStart="15dp"
-            android:paddingLeft="15dp">
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:text="Актуальное"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvBottomMain"

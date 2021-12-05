@@ -65,10 +65,10 @@ class ClientHomeFragment : Fragment() {
 
         val listBottom = arrayListOf<BottomMain>()
 
-        val bottommain1 = BottomMain("1", "@drawable/iv_c_recycler1")
-        val bottommain2 = BottomMain("2", "@drawable/iv_c_recycler1")
-        val bottommain3= BottomMain("3", "@drawable/iv_main_recycler1_3")
-        val bottommain4 = BottomMain("4", "@drawable/iv_main_recycler1_3")
+        val bottommain1 = BottomMain("1", "@drawable/iv_c_recycler1", "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain2 = BottomMain("2", "@drawable/iv_c_recycler1", "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain3= BottomMain("3", "@drawable/iv_main_recycler1_3", "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain4 = BottomMain("4", "@drawable/iv_main_recycler1_3", "Крепкий орешек", "Марафон к лету Комплекс")
 
         listBottom.addAll(listOf(bottommain1, bottommain2, bottommain3, bottommain4))
 
