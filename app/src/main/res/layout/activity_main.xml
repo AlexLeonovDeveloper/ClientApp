@@ -26,7 +26,7 @@
         android:background="@color/profile_bg"
         app:itemIconTint="@color/black"
         app:itemTextColor="@android:color/transparent"
-        app:labelVisibilityMode="auto"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
