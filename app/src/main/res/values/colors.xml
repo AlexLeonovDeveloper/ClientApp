@@ -10,5 +10,14 @@
     <color name="main_bg">#C8EFF4</color>
     <color name="profile_bg">#E5E5E5</color>
     <color name="grey">#8F8F8F</color>
+    <color name="radioBottonColor">#1E50FB</color>
+    <color name="cleanerColor">#DEDEDEDE</color>
+    <color name="cleanerColor2">#EDEDED</color>
+    <color name="cleanerColor3">#E7E4E4</color>
+    <color name="settings_notif_grey">#AAABB8</color>
+    <color name="check_input">#66AFD9</color>
+
+
+
 
 </resources>

@@ -11,11 +11,25 @@
     android:padding="5dp"
     tools:context=".ui.fragments.ClientServicesFragment">
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Исследовать"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/ivYslugi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:padding="8dp"
         android:src="@drawable/iv_issledovat_yslugi">
 
@@ -45,7 +59,7 @@
         android:id="@+id/ivKosmetologi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:layout_toRightOf="@id/ivYslugi"
         android:padding="8dp"
         android:src="@drawable/iv_issledovat_kosmetologi">

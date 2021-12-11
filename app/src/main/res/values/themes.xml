@@ -24,4 +24,10 @@
 
         <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
     </style>
+    <style name="MySwich" parent="Theme.AppCompat.Light">
+
+        <item name="colorControlActivated">@color/radioBottonColor</item>
+        <item name="colorSwitchThumbNormal">@color/cleanerColor2</item>
+        <item name="android:colorForeground">@color/cleanerColor3</item>
+    </style>
 </resources>
