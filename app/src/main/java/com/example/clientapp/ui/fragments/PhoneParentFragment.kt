@@ -16,7 +16,6 @@ class PhoneParentFragment : Fragment() {
     companion object {
         fun newInstance() = PhoneParentFragment()
     }
-
     private lateinit var viewModel: ParentViewModel
 
     override fun onCreateView(
@@ -25,11 +24,9 @@ class PhoneParentFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.parent_fragment, container, false)
     }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ParentViewModel::class.java)
         // TODO: Use the ViewModel
     }
-
 }

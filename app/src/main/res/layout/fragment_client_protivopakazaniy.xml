@@ -1,14 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/profile_bg"
     tools:context=".ui.fragments.ClientProtivopakazaniyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
+        android:id="@+id/sheets"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="450dp"
+        android:background="@drawable/rounded"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/remove">
+
+        </ImageView>
+
+    </FrameLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/iv_settings_toolbar_left" />
+
+    <TextView
+        android:id="@+id/tvBacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:text="Назад"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="15dp"
+        android:text="Сохранить"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvProtiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSave"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Противопоказания"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPos1"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProtiv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="предрасположенность к формированию келоидных и гипертрофических рубцов"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvPos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPos1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="плохое заживление ран"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvPos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPos2"
+        android:layout_marginLeft="15dp"
+        android:text="гиперчувствительность кожи"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tvProtiv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/checkbox"
+        app:useMaterialThemeColors="false" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tvPos1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/checkbox"
+        app:useMaterialThemeColors="false" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tvPos2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/checkbox"
+        app:useMaterialThemeColors="false" />
+</RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

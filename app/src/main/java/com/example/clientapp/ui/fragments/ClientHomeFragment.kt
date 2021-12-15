@@ -21,6 +21,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class ClientHomeFragment : Fragment() {
 
     private lateinit var binding: FragmentClientHomeBinding
+    private lateinit var bottom: com.google.android.material.bottomnavigation.BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,15 +66,20 @@ class ClientHomeFragment : Fragment() {
 
         val listBottom = arrayListOf<BottomMain>()
 
-        val bottommain1 = BottomMain("1", "@drawable/iv_c_recycler1", "Крепкий орешек", "Марафон к лету Комплекс")
-        val bottommain2 = BottomMain("2", "@drawable/iv_c_recycler1", "Крепкий орешек", "Марафон к лету Комплекс")
-        val bottommain3= BottomMain("3", "@drawable/iv_main_recycler1_3", "Крепкий орешек", "Марафон к лету Комплекс")
-        val bottommain4 = BottomMain("4", "@drawable/iv_main_recycler1_3", "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain1 = BottomMain("1",  "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain2 = BottomMain("2",  "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain3= BottomMain("3",  "Крепкий орешек", "Марафон к лету Комплекс")
+        val bottommain4 = BottomMain("4", "Крепкий орешек", "Марафон к лету Комплекс")
 
         listBottom.addAll(listOf(bottommain1, bottommain2, bottommain3, bottommain4))
 
         binding.rvBottomMain.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvBottomMain.adapter = BottomMainAdapter(requireContext(), listBottom)
+    }
+    override fun onResume() {
+        super.onResume()
+        bottom = requireActivity().findViewById(R.id.nav_bottom)
+        bottom.visibility = View.VISIBLE
     }
 }

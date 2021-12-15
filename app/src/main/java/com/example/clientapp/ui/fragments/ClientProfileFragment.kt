@@ -16,11 +16,11 @@ class ClientProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentClientProfileBinding
     private lateinit var navController: NavController
+    private lateinit var bottom: com.google.android.material.bottomnavigation.BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,9 +28,11 @@ class ClientProfileFragment : Fragment() {
         binding = FragmentClientProfileBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        bottom = requireActivity().findViewById(R.id.nav_bottom)
+        bottom.visibility = View.VISIBLE
 
         navController = Navigation.findNavController(view)
 
@@ -39,6 +41,9 @@ class ClientProfileFragment : Fragment() {
             rvSettings.setOnClickListener {
 
                 navController.navigate(R.id.action_clientProfileFragment_to_clientSettingsFragment)
+            }
+            rvProtivopokazania.setOnClickListener {
+                navController.navigate(R.id.action_clientProfileFragment_to_clientProtivopakazaniyFragment)
             }
         }
     }

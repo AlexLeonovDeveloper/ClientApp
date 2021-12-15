@@ -20,7 +20,7 @@
     </TextView>
 
     <TextView
-        android:id="@+id/tvSave"
+        android:id="@+id/tvBacks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="17dp"
         android:text="Назад"
         android:textColor="@color/black"
         android:textSize="17sp">
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15sp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="17dp"
         android:src="@drawable/iv_settings_toolbar_left">
 
     </ImageView>
@@ -92,7 +92,9 @@
             android:fadeScrollbars="true"
             android:persistent="false"
             android:theme="@style/MySwich"
-            app:track="@drawable/iv_notif_check" />
+            app:thumbTint="#F8F6F6"
+            app:track="@drawable/iv_check_settings"
+            app:useMaterialThemeColors="false" />
 
     </RelativeLayout>
 
@@ -145,7 +147,7 @@
             android:persistent="false"
             android:textColorLink="#03A9F4"
             android:theme="@style/MySwich"
-            app:track="@drawable/iv_notif_check" />
+            app:track="@drawable/iv_check_settings" />
 
     </RelativeLayout>
 
@@ -188,7 +190,7 @@
             android:persistent="false"
             android:textColorLink="#03A9F4"
             android:theme="@style/MySwich"
-            app:track="@drawable/iv_notif_check" />
+            app:track="@drawable/iv_check_settings" />
 
     </RelativeLayout>
 
@@ -232,7 +234,7 @@
             android:persistent="false"
             android:textColorLink="#03A9F4"
             android:theme="@style/MySwich"
-            app:track="@drawable/iv_notif_check" />
+            app:track="@drawable/iv_check_settings" />
 
     </RelativeLayout>
 

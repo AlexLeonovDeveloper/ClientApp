@@ -21,7 +21,7 @@ class TopCenterAdapter (val requireContext: Context, val centerMain: ArrayList<C
         )
     }
     override fun onBindViewHolder(holder: animalViewHolder, position: Int) {
-        Glide.with(requireContext).load(centerMain[position].link).into(holder.imageview)
+        Glide.with(requireContext).load(requireContext.getDrawable((R.drawable.iv_main_center))).into(holder.imageview)
     }
     override fun getItemCount() = centerMain.size
 }

@@ -21,7 +21,7 @@ class TopMainAdapter (val requireContext: Context, val listmain: ArrayList<TopMa
         )
     }
     override fun onBindViewHolder(holder: animalViewHolder, position: Int) {
-        Glide.with(requireContext).load(listmain[position].link).into(holder.imageview)
+        Glide.with(requireContext).load(requireContext.getDrawable((R.drawable.iv_main_top))).into(holder.imageview)
     }
     override fun getItemCount() = listmain.size
 }

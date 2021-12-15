@@ -21,7 +21,9 @@ class BottomMainAdapter (val requireContext: Context, val listBottomMain: ArrayL
         )
     }
     override fun onBindViewHolder(holder: animalViewHolder, position: Int) {
-        Glide.with(requireContext).load(listBottomMain[position].link).into(holder.imageview)
+
+        Glide.with(requireContext).load(requireContext.getDrawable((R.drawable.iv_main_bottom))).into(holder.imageview)
+
     }
     override fun getItemCount() = listBottomMain.size
 }

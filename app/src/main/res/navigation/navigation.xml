@@ -46,6 +46,9 @@
         <action
             android:id="@+id/action_clientProfileFragment_to_clientSettingsFragment"
             app:destination="@id/clientSettingsFragment" />
+        <action
+            android:id="@+id/action_clientProfileFragment_to_clientProtivopakazaniyFragment"
+            app:destination="@id/clientProtivopakazaniyFragment" />
     </fragment>
     <fragment
         android:id="@+id/clientSearchFragment"
@@ -64,6 +67,9 @@
         <action
             android:id="@+id/action_clientServicesFragment_to_clientHomeFragment"
             app:destination="@id/clientHomeFragment" />
+        <action
+            android:id="@+id/action_clientServicesFragment_to_vubratUsluguFragment"
+            app:destination="@id/vubratUsluguFragment" />
     </fragment>
     <fragment
         android:id="@+id/clientSettingsFragment"
@@ -73,5 +79,23 @@
         <action
             android:id="@+id/action_clientSettingsFragment_to_clientProfileFragment"
             app:destination="@id/clientProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientProtivopakazaniyFragment"
+        android:name="com.example.clientapp.ui.fragments.ClientProtivopakazaniyFragment"
+        android:label="fragment_client_protivopakazaniy"
+        tools:layout="@layout/fragment_client_protivopakazaniy" >
+        <action
+            android:id="@+id/action_clientProtivopakazaniyFragment_to_clientProfileFragment"
+            app:destination="@id/clientProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vubratUsluguFragment"
+        android:name="com.example.clientapp.ui.fragments.VubratUsluguFragment"
+        android:label="fragment_vubrat_uslugu"
+        tools:layout="@layout/fragment_vubrat_uslugu" >
+        <action
+            android:id="@+id/action_vubratUsluguFragment_to_clientServicesFragment"
+            app:destination="@id/clientServicesFragment" />
     </fragment>
 </navigation>
