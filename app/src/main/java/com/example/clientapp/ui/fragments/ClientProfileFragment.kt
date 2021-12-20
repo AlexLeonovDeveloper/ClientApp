@@ -45,6 +45,11 @@ class ClientProfileFragment : Fragment() {
             rvProtivopokazania.setOnClickListener {
                 navController.navigate(R.id.action_clientProfileFragment_to_clientProtivopakazaniyFragment)
             }
+            rvPersonal.setOnClickListener {
+                navController.navigate(R.id.action_clientProfileFragment_to_clientPersonalInformationFragment)
+
+
+            }
         }
     }
 }

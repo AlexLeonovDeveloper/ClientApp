@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/profile_bg"
-    app:cardElevation="0.5dp"
+    app:cardElevation="0dp"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -34,12 +34,24 @@
                 android:layout_alignParentBottom="false"
                 android:layout_centerVertical="false"
                 android:layout_marginLeft="3dp"
+                android:layout_toEndOf="@id/imageView3"
                 android:layout_toRightOf="@id/tvMoney"
                 android:gravity="left"
                 android:text="45 м."
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@id/ivImage"
+                app:srcCompat="@drawable/iv_service_money" />
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -60,6 +72,16 @@
                 android:textSize="14sp"
                 android:textStyle="normal" />
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@id/tvMoney"
+                app:srcCompat="@drawable/iv_service_time" />
+
             <TextView
                 android:id="@+id/tvMoney"
                 android:layout_width="69dp"
@@ -70,7 +92,7 @@
                 android:layout_alignParentBottom="false"
                 android:layout_centerVertical="false"
                 android:layout_marginLeft="3dp"
-                android:layout_toEndOf="@id/ivImage"
+                android:layout_toEndOf="@id/ivMoney"
                 android:gravity="left"
                 android:text="1200 р."
                 android:textColor="@color/black"
@@ -103,5 +125,14 @@
                 app:useMaterialThemeColors="false" />
 
         </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/iv_line" />
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

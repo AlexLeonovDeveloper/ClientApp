@@ -1,14 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/profile_bg"
+    android:textAlignment="center"
     tools:context=".ui.fragments.ClientPersonalInformationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvBacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="15sp"
+        android:text="Сохранить"
+        android:textColor="@color/black"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:text="Назад"
+        android:textColor="@color/black"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/iv_settings_toolbar_left">
+
+    </ImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutFullName"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLeft">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_item_background"
+            android:hint="ФИО"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/editTextEmail"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/profile_bg"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTel"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutFullName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTel"
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_item_background"
+            android:hint="Телефон"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/editTextEmail"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/profile_bg"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutDopTel"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutTel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDopTel"
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_item_background"
+            android:hint="Дополнительный телефон"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/editTextEmail"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutDateH"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutDopTel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDateH"
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_item_background"
+            android:hint="Дата рождения"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:nextFocusDown="@+id/editTextEmail"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPol"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputLayoutDateH">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPol"
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/iv_item_background"
+            android:hint="Пол"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/editTextEmail"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

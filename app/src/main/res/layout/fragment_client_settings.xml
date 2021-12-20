@@ -63,7 +63,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         android:foreground="?attr/selectableItemBackground">
 
         <TextView
@@ -117,7 +117,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:foreground="?attr/selectableItemBackground">
 
         <TextView
@@ -160,7 +159,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:foreground="?attr/selectableItemBackground">
 
         <TextView
@@ -203,7 +201,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:foreground="?attr/selectableItemBackground">
 
         <TextView

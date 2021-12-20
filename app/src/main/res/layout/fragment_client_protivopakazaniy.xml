@@ -62,8 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvSave"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="25dp"
         android:text="Противопоказания"
         android:textColor="@color/black"
@@ -75,29 +75,50 @@
         android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvProtiv"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
         android:text="предрасположенность к формированию келоидных и гипертрофических рубцов"
         android:textColor="@color/black"
         android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPos1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/iv_line" />
 
     <TextView
         android:id="@+id/tvPos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvPos1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:text="плохое заживление ран"
         android:textColor="@color/black"
         android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPos2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/iv_line" />
 
     <TextView
         android:id="@+id/tvPos3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvPos2"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
         android:text="гиперчувствительность кожи"
         android:textColor="@color/black"
         android:textSize="14sp" />
@@ -108,8 +129,8 @@
         android:layout_height="25dp"
         android:layout_below="@id/tvProtiv"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="25dp"
         android:button="@drawable/checkbox"
         app:useMaterialThemeColors="false" />
 
@@ -120,7 +141,8 @@
         android:layout_height="25dp"
         android:layout_below="@id/tvPos1"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="25dp"
         android:button="@drawable/checkbox"
         app:useMaterialThemeColors="false" />
 
@@ -130,7 +152,8 @@
         android:layout_height="25dp"
         android:layout_below="@id/tvPos2"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="25dp"
         android:button="@drawable/checkbox"
         app:useMaterialThemeColors="false" />
 </RelativeLayout>
