@@ -42,6 +42,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
                 android:duplicateParentState="false"
+                android:rotation="180"
                 android:src="@drawable/iv_child_close" />
 
             <ImageView

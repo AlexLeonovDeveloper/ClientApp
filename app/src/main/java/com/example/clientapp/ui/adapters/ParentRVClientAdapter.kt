@@ -29,11 +29,20 @@ class ParentRVClientAdapter(private val parents: List<TopicClientService>) :
                     layoutManager = LinearLayoutManager(context)
                     adapter = adapterClass
                 }
-                ivCleanClose.setOnClickListener {
-                    childRecycler.isGone = !childRecycler.isGone
-                }
+//                ivCleanClose.setOnClickListener {
+//                    childRecycler.isGone = !childRecycler.isGone
+//                        ivCleanClose.rotation = 180F
+//                    }
+
                 rvCard.setOnClickListener {
                     childRecycler.isGone = !childRecycler.isGone
+                    if (childRecycler.isGone) {
+                        ivCleanClose.rotation = 180F
+
+                    } else {
+                        ivCleanClose.rotation = 0F
+
+                    }
                 }
                     adapterClass.notifyDataSetChanged()
             }

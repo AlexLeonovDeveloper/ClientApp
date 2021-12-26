@@ -51,7 +51,11 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvLeft">
+        android:layout_below="@id/tvLeft"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/profile_bg"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
@@ -80,7 +84,9 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputLayoutFullName">
+        android:layout_below="@id/inputLayoutFullName"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/profile_bg">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etTel"
@@ -108,7 +114,8 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputLayoutTel">
+        android:layout_below="@id/inputLayoutTel"
+        app:boxStrokeColor="@color/profile_bg">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDopTel"
@@ -136,7 +143,8 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputLayoutDopTel">
+        android:layout_below="@id/inputLayoutDopTel"
+        app:boxStrokeColor="@color/profile_bg">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDateH"
@@ -165,7 +173,9 @@
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputLayoutDateH">
+        android:layout_below="@id/inputLayoutDateH"
+        app:boxStrokeColor="@color/profile_bg"
+        app:startIconTint="#E6E4E4">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPol"
