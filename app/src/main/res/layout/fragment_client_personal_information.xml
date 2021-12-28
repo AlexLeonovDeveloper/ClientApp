@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/profile_bg"
+    android:clipToPadding="true"
     android:textAlignment="center"
     tools:context=".ui.fragments.ClientPersonalInformationFragment">
 
@@ -48,32 +49,32 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutFullName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_below="@id/tvLeft"
-        app:boxBackgroundMode="filled"
-        app:boxStrokeColor="@color/profile_bg"
-        app:hintAnimationEnabled="true"
-        app:hintEnabled="true">
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iv_item_background"
+        android:clipToPadding="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="ФИО"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="#F8F0F0"
+        app:endIconMode="clear_text"
+        app:endIconTint="#F4F3F3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
-            fontPath="fonts/OpenSans-Semibold.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/iv_item_background"
-            android:hint="ФИО"
-            android:imeOptions="actionNext"
-            android:inputType="textCapWords"
-            android:nextFocusDown="@+id/editTextEmail"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/profile_bg"
-            android:textColorHint="@color/grey"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -81,88 +82,98 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutTel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_below="@id/inputLayoutFullName"
-        app:boxBackgroundMode="filled"
-        app:boxStrokeColor="@color/profile_bg">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iv_item_background"
+        android:clipToPadding="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Телефон"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="#F8F0F0"
+        app:endIconMode="clear_text"
+        app:endIconTint="#F4F3F3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etTel"
-            fontPath="fonts/OpenSans-Semibold.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/iv_item_background"
-            android:hint="Телефон"
-            android:imeOptions="actionNext"
-            android:inputType="phone"
-            android:nextFocusDown="@+id/editTextEmail"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/profile_bg"
-            android:textColorHint="@color/grey"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutDopTel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_below="@id/inputLayoutTel"
-        app:boxStrokeColor="@color/profile_bg">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iv_item_background"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Дополнительный телефон"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="#F8F0F0"
+        app:endIconMode="clear_text"
+        app:endIconTint="#F4F3F3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDopTel"
-            fontPath="fonts/OpenSans-Semibold.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/iv_item_background"
-            android:hint="Дополнительный телефон"
-            android:imeOptions="actionNext"
-            android:inputType="phone"
-            android:nextFocusDown="@+id/editTextEmail"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/grey"
-            android:textColorHint="@color/grey"
-            android:textSize="14sp" />
+            android:textSize="14sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutDateH"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_below="@id/inputLayoutDopTel"
-        app:boxStrokeColor="@color/profile_bg">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iv_item_background"
+        android:clipToPadding="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Дата рождения"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:boxStrokeColor="#F8F0F0"
+        app:endIconMode="clear_text"
+        app:endIconTint="#F4F3F3"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDateH"
-            fontPath="fonts/OpenSans-Semibold.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/iv_item_background"
-            android:hint="Дата рождения"
-            android:imeOptions="actionNext"
-            android:inputType="date"
-            android:nextFocusDown="@+id/editTextEmail"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/grey"
-            android:textColorHint="@color/grey"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -170,30 +181,33 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutPol"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_below="@id/inputLayoutDateH"
-        app:boxStrokeColor="@color/profile_bg"
-        app:startIconTint="#E6E4E4">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iv_item_background"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        android:foregroundGravity="top|left"
+        android:gravity="top|left"
+        app:boxBackgroundMode="none"
+        app:boxStrokeColor="#F8F0F0"
+        app:endIconMode="clear_text"
+        app:endIconTint="#F4F3F3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPol"
-            fontPath="fonts/OpenSans-Semibold.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/iv_item_background"
+
+            android:layout_gravity="top|left"
+            android:foregroundGravity="top|left"
+            android:freezesText="false"
+            android:gravity="top|left"
             android:hint="Пол"
-            android:imeOptions="actionNext"
-            android:inputType="textCapWords"
-            android:nextFocusDown="@+id/editTextEmail"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/grey"
-            android:textColorHint="@color/grey"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>

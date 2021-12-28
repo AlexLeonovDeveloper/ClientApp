@@ -38,7 +38,7 @@
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/activity_main.xml" value="0.18697916666666667" />
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_chat.xml" value="0.18697916666666667" />
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_home.xml" value="0.19166666666666668" />
-        <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_personal_information.xml" value="0.19166666666666668" />
+        <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_personal_information.xml" value="0.22" />
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_profile.xml" value="0.18697916666666667" />
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_protivopakazaniy.xml" value="0.17962962962962964" />
         <entry key="..\:/androidApp/ClientApplicationNewGithub/app/src/main/res/layout/fragment_client_search.xml" value="0.19166666666666668" />
@@ -58,5 +58,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.19166666666666668" />
+      </ProjectState>
+    </option>
   </component>
 </project>
